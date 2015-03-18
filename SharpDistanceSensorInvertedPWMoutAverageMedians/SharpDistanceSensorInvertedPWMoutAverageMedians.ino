@@ -246,9 +246,9 @@ void diagnostics(unsigned long _time)
 			startDiagnostics = true; // re-enable the header line for CSV output
 			startGrapher = false;
 			Serial.println(F("R\nR\nR")); // Reset graphing window "It is recommended to start your graph with a couple of these commands to get the serial system into sync."
-			Serial.println(F("S1280:800")); // Screen size x:y
+			Serial.println(F("S1920:1024")); // Screen size x:y
 			Serial.println(F("M10:10:60:20")); // Margins top:right:bottom:left
-			Serial.println(F("B255:255:255")); // Background Color red:green:blue
+			Serial.println(F("B200:200:200")); // Background Color red:green:blue
 			Serial.println(F("F0:0:0")); // Axis color red:green:blue
 			Serial.println(F("Y0:1024:64")); // Y axis scale min:max:step
 
