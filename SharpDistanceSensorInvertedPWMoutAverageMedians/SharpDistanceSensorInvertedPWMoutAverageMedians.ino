@@ -6,6 +6,7 @@
  *
  * By Chris "Sembazuru" Elliott, SembazuruCDE (at) GMail.com
  * 2014/05/13
+ * 2015/10/31 - Change diagnostic pins, A5 -> A1, A4 -> A2 for easier wiring on Pro Mini.
  *
  * To the extent possible under law, Chris "Sembazuru" Elliott has waived all
  *  copyright and related or neighboring rights to SharpDistanceSensorPWMout.ino
@@ -29,8 +30,8 @@
 
 // Pair of pins to enable serial diagnostics.
 // Short these two pins (or just the diagnosticsPin to ground) to silence serial diagnostics.
-const byte diagnosticsPin = A5;
-const byte diagnosticsGnd = A4;
+const byte diagnosticsPin = A1;
+const byte diagnosticsGnd = A2;
 boolean startDiagnostics = true;
 // Pin, constants, and global variables for UECIDE Grapher formatted serial diagnostics.
 const byte grapherPin = A3;
@@ -73,7 +74,7 @@ int fadeValue = fadeMax;
 
 void setup()
 {
-	Serial.begin(1152000);
+	Serial.begin(115200);
 	while (!Serial); // Wait for serial port to connect. Needed for Leonardo only.
 	delay(1000); // Simply to allow time for the ERW versions of the IDE time to automagically open the Serial Monitor. 1 second chosen arbitrarily.
 
