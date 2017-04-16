@@ -1,8 +1,7 @@
 # Veusz saved document (version 1.23.1)
-# Saved at 2015-10-21T04:05:13.381000
+# Saved at 2015-11-07T20:58:13.171000
 
 AddImportPath(u'D:\\Libraries\\MyDevelopment\\Arduino\\EntrySensorLight')
-ImportFileCSV(u'capturetail.csv', blanksaredata=True, headermode='none', linked=True, rowsignore=1)
 Set('width', u'16in')
 Set('height', u'9in')
 Add('page', name='page1', autoadd=False)
